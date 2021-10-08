@@ -1,0 +1,673 @@
+body {
+    background-color: #0f0f0f;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/indexBg.jpg);
+    background-position: center 8px;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-text {
+    width: 30%;
+    font-family: nature-beauty;
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.nav-item-container {
+    width: 45%;
+    height: 15vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item-container a {
+    text-decoration: none;
+}
+
+.nav-item {
+    font-family: aquawax-medium;
+    font-size: 16px;
+    color: white;
+    list-style: none;
+}
+
+.button-home {
+    background-color: transparent;
+    border: solid 2px white;
+    font-family: aquawax-medium;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.button-home:hover {
+    background-color: white;
+    color: black;
+    transition: 250ms;
+}
+
+.home-hero {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: -15px 0 0 -250px;
+}
+
+.home-banner-container {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.home-banner {
+    height: 210px;
+    width: 320px;
+    border-radius: 30px;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+.banner-game-1 {
+    position: relative;
+    top: -70px;
+    left: -150px;
+    background-image: url(../img/bannerDeadByDaylight.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    z-index: 4;
+}
+
+.slideRight-1 {
+    left: 0;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.banner-game-2 {
+    position: relative;
+    left: 120px;
+    background-image: url(../img/bannerKingdomHeartsIII.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    z-index: 3;
+}
+
+.slideRight-2 {
+    left: 250px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.banner-game-3 {
+    position: relative;
+    top: 70px;
+    left: 430px;
+    background-image: url(../img/bannerCyberpunk2077.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    z-index: 2;
+}
+
+.slideRight-3 {
+    left: 500px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.home-hero-text {
+    width: 30%;
+    margin-left: 120px;
+    line-height: 1;
+    opacity: 0;
+}
+
+.home-hero-text h1 {
+    margin-top: 5px;
+    font-family: aquawax-black;
+    font-weight: 300;
+    font-size: 45px;
+    color: white;
+}
+
+.home-hero-text h2 {
+    margin-top: -32px;
+    font-family: aquawax-medium;
+    font-weight: 300;
+    font-size: 42px;
+    color: white;
+}
+
+.home-hero-text button {
+    margin-top: -10px;
+    font-size: 21px;
+}
+
+.slideLeft {
+    margin-left: 50px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.home-highlight {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 65px 0 65px 0;
+}
+
+.home-highlight-text {
+    width: 20%;
+    text-align: right;
+    line-height: 1;
+}
+
+.home-highlight-text h1 {
+    font-family: aquawax-black;
+    color: white;
+    font-weight: 100;
+    font-size: 38px;
+}
+
+.home-highlight-text h2 {
+    font-family: aquawax-medium;
+    color: white;
+    font-weight: 100;
+    font-size: 34px;
+}
+
+.home-highlight-text span {
+    font-family: aquawax-black;
+    font-size: 36px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #b186ff;
+    text-shadow: 0px 0px 80px rgba(82, 51, 255, 0.808);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.home-highlight-text span:hover {
+    filter:contrast(2);
+    transition: all .2s;
+}
+
+.home-highlight-banner-container {
+    width: 450px;
+    height: 250px;
+    margin-left: 50px;
+}
+
+.highlight-game-banner {
+    width: 450px;
+    height: 250px;
+    background-image: url(../img/bannerLifeIsStrangeTrueColors.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.home-highlight-banner-container:hover .highlight-game-banner {
+    transform: scale(1.05);
+    filter:brightness(1.5);
+    transition: all .3s;
+}
+
+.fade-in {
+    opacity: 0;
+}
+
+.fade-in.on {
+    opacity: 1;
+    transition: opacity 450ms;
+}
+
+.from-left {
+    transform: translateX(-50%);
+}
+
+.from-right {
+    transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+    transition: opacity 250ms, transform 600ms;
+    opacity: 0;
+}
+
+.from-left.on,
+.from-right.on {
+    transform: initial;
+    opacity: 1;
+}
+
+.separator {
+    width: 20vw;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto 0 auto;
+}
+
+.show-up {
+    height: 0px;
+    width: 0vw;
+    transition: 1s;
+}
+
+.show-up.on {
+    height: 1px;
+    width: 20vw;
+    transition: 1s;
+}
+
+.home-other-games {
+    padding: 65px 0 65px 0;
+    width: 100%;
+    line-height: 1;
+    text-align: center;
+}
+
+.home-other-games h1 {
+    font-family: aquawax-black;
+    color: white;
+    font-weight: 100;
+    font-size: 33px;
+}
+
+.home-other-games h2 {
+    margin-top: -18px;
+    font-family: nature-beauty;
+    color: white;
+    font-weight: 100;
+    font-size: 33px;
+}
+
+.other-banners-container {
+    margin: 50px auto 0 auto;
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.other-banner {
+    width: 260px;
+    height: 400px;
+    overflow: hidden;
+    transform: skew(345deg);
+    border-radius: 40px;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+.other-1,
+.other-2,
+.other-3 {
+    width: 450px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: skew(-345deg);
+    margin-left: -90px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.other-1 {
+    background-image: url(../img/bannerNeonAbyss.jpg);
+}
+
+.other-2 {
+    background-image: url(../img/bannerSonicColorsUltimate.jpg);
+}
+
+.other-3 {
+    background-image: url(../img/bannerHades.jpg);
+}
+
+.other-1:hover,
+.other-2:hover,
+.other-3:hover {
+    transform: scale(1.2) skew(-345deg);
+    filter:brightness(1.6);
+    transition: all .3s;
+}
+
+.home-other-games button {
+    font-size: 24px;
+}
+
+.partners {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 440px;
+    background-image: url(../img/indexBg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logos {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    width: 260px;
+    height: 290px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.l1 {
+    background-image: url(../img/logoSteam.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.l2 {
+    background-image: url(../img/logoEpicGames.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.l3 {
+    background-image: url(../img/logoBattleNet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.l4 {
+    background-image: url(../img/logoOrigin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.partners-text {
+    margin-left: 40px;
+}
+
+.partners-text h2 {
+    font-family: aquawax-medium;
+    color: white;
+    font-weight: 100;
+    font-size: 38px;
+}
+
+.partners-text h1 {
+    margin-top: -35px;
+    font-family: aquawax-black;
+    color: white;
+    font-weight: 100;
+    font-size: 38px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 40px 0 60px 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-lists {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+footer ul {
+    line-height: 2;
+}
+
+footer ul h1 {
+    font-family: aquawax-black;
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.footer-item {
+    font-family: aquawax-light;
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+    list-style: none;
+}
+
+.footer-text {
+    margin-right: 40px;
+    text-align: right;
+}
+
+.footer-text h1 {
+    font-family: nature-beauty;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.footer-text h2 {
+    margin-top: -18px;
+    font-family: Arial;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 1920px) {
+    .home-banner {
+        width: 360px;
+        height: 240px;
+    }
+
+    .logo-text {
+        font-size: 36px;
+    }
+
+    .nav-item,
+    .button-home {
+        font-size: 20px;
+    }
+
+    .home-hero-text h1 {
+        font-size: 49px;
+    }
+    
+    .home-hero-text h2 {
+        font-size: 47px;
+    }
+
+    .home-hero-text button {
+        font-size: 26px;
+    }
+
+    .home-highlight-text h2 {
+        font-size: 38px;
+    }
+    
+    .home-highlight-text span {
+        font-size: 40px;
+    }
+
+    .home-highlight-banner-container {
+        width: 470px;
+        height: 270px;
+    }
+    
+    .highlight-game-banner {
+        width: 470px;
+        height: 270px;
+    }
+
+    .home-other-games h1, 
+    .home-other-games h2 {
+        font-size: 39px;
+    }
+
+    .other-banner {
+        width: 290px;
+        height: 400px;
+    }
+
+    .partners {
+        height: 500px;
+    }
+
+    .partners-text h2,
+    .partners-text h1,
+    .home-highlight-text h1 {
+        font-size: 46px;
+    }
+
+    .logos {
+        width: 270px;
+        height: 300px;
+    }
+    
+    .logo {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .footer-item,
+    footer ul h1 {
+        font-size: 22px;
+    }
+
+    .footer-text h1 {
+        font-size: 34px;
+    }
+    
+    .footer-text h2 {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1442px) {
+    .home-banner {
+        width: 300px;
+    }
+
+    .home-hero-text h1 {
+        font-size: 43px;
+    }
+
+    .home-hero-text h2 {
+        font-size: 40px;
+    }
+
+    .other-banner {
+        width: 240px;
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 1357px) {
+    .home-banner {
+        width: 280px;
+    }
+
+    .other-banner {
+        width: 220px;
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 1271px) {
+    .home-banner {
+        width: 260px;
+        height: 170px;
+    }
+
+    .slideRight-2 {
+        left: 230px;
+    }
+    
+    .slideRight-3 {
+        left: 460px;
+    }
+}
+
+/* Fonts imported */
+
+@font-face {
+    font-family: nature-beauty;
+    src: url(../fonts/nature-beauty.ttf);
+}
+
+@font-face {
+    font-family: aquawax-black;
+    src: url(../fonts/aquawax-black.ttf);
+}
+
+@font-face {
+    font-family: aquawax-medium;
+    src: url(../fonts/aquawax-medium.ttf);
+}
+
+@font-face {
+    font-family: aquawax-light;
+    src: url(../fonts/aquawax-light.ttf);
+}
