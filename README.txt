@@ -1,6 +1,6 @@
 Description:
 
-• Concept of a digital game store. Made to practice mainly HTML, CSS and JavaScript (or yet, JQuery)
+• Concept of a digital game store. Made to practice mainly HTML, CSS and JavaScript (or better, JQuery)
 
 Notes:
 
