@@ -4,7 +4,7 @@ Description:
 
 Notes:
 
-• Home page done (still uncertain about the background image)
+• Static homepage done (still uncertain about the background image)
 • Added some simple animations to home page
 • 1271px - 1920px width responsive
 • Not mobile responsive, yet
